@@ -1,6 +1,7 @@
 ---
 title: RestAPI 정리
 date: 2023-02-12 18:10:00 +0900
+update:
 categories: [web, api]
 tags: [rest_api]  
 ---
@@ -17,7 +18,9 @@ Rest는 REpresentational State Transfer의 줄임말.
 
 ### 구성
 
-1. 자원(Resource) - URI
+1. <span style="background: #fff5b1;color: #2D3748">자원(Resource) - URI</span>
+    * 실제 서버에 저장된 데이터
+    * 이미지, 동영상, DB 등
 2. 행위(Verb) - Method
 3. 표현(Representation of Resource)
 
