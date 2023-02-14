@@ -1,12 +1,13 @@
 ---
-title: RestAPI 정리
+title: '[REST API] RestAPI 정리'
 date: 2023-02-12 18:10:00 +0900
-update:
 categories: [web, api]
 tags: [rest_api]  
 ---
 
 # Rest API
+
+여러 블로그에서 정리된 내용을 종합하여 공부한 내용을 정리해봅니다.
 
 ## Rest?
 
@@ -18,38 +19,53 @@ Rest는 REpresentational State Transfer의 줄임말.
 
 ### 구성
 
-1. <span style="background: #fff5b1;color: #2D3748">자원(Resource) - URI</span>
+1. **자원(Resource) - URI**
     * 실제 서버에 저장된 데이터
     * 이미지, 동영상, DB 등
-2. 행위(Verb) - Method
-3. 표현(Representation of Resource)
+2. **행위(Verb) - Method**
+    * 저장, 삭제, 읽기 등 자원을 다루는 행위
+3. **표현(Representation of Resource)**
+    * 자원을 부르는 이름
+    * 게시글 데이터 -> psot로 표현
 
 ### 특징
 
-1. Server-Client (서버-클라이언트 구조)
-
-2. Stateless (무상태)
-3. Cacheable (캐시 처리 기능)
-4. Layered System (계층 구조)
-5. Uniform Interface (인터페이스 일관성)
-6. Self-Descriptivness (자체 표현)
+1. **Server-Client (서버-클라이언트 구조)**
+    * Client는 자원을 요청히고, Server는 요청을 처리.
+    * 각자 개발할 부분이 명확해지고, 의존성이 줄어든다.
+2. **Stateless (무상태)**
+    * REST는 HTTP 프로토콜을 이용하므로 REST 역시 Stateless이다.
+    * REST는 자원에 대한 상태를 따로 저장하지 않는다.  
+    -> 서버로 들어오는 요청만 처리하면 된다.
+    * 서버에 불필요한 자원 처리를 하지 않아도 되므로 구현이 쉬워지고, 자유도가 높아진다.
+3. **Cacheable (캐시 처리 기능)**
+    * REST는 HTTP 프로토콜을 이용하므로 캐싱 기능을 사용할 수 있다.
+    * 캐시 처리를 통해 응답 속도를 향상 시킬 수 있다.
+4. **Layered System (계층 구조)**
+    * REST Server는 여러 계층으로 구성할 수 있다.
+    * 자원에 대한 요청을 수행하기 전에 암호화, 사용자 인증 등을 추가해 구조산 유연성을 둘 수 있다.
+5. **Uniform Interface (인터페이스 일관성)**
+    * 자원에 대한 조작을 통일되고 한정적인 인터페이스로 수행한다.
+    * 언어나 플랫폼 상관 없이 HTTP 프로토콜을 따르는 모든 곳에서 사용이 가능하다.
+6. **Self-Descriptivness (자체 표현)**
+    * REST API 메세지만 보고도 쉽게 이해 가능한 표현 구조로 작성되어있다.
 
 ### CRUD
 
-- 자원에 대한 4가지 행위(Verb).
-- HTTP Method(GET, POST, PUT, DELETE)로 표현.
+- 자원에 대한 **4가지 행위(Verb)**.
+- **HTTP Method(GET, POST, PUT, DELETE)**로 표현.
     - GET - Read(정보 요청), URI가 가진 정보를 검색하기 위해 서버에 요청
     - POST - Create(정보 입력), 클라이언트에서 서버로 전달하려는 정보를 전송
     - PUT - Update(정보 업데이트), 내용을 갱신하기 위해 사용
     - DELETE - Delete(정보 삭제), 내용을 삭제
-    - Patch
+    - Patch - 일부 내용만 수정
     - HEAD
 
 ## Rest API?
 
 ### 정의
 
-- REST의 원리와 특징을 따르는 API.
+- **REST의 원리와 특징을 따르는 API.**
 
 ### 중심 규칙
 
