@@ -10,6 +10,10 @@
   type: email
   icon: 'fas fa-envelope'
   noblank: true            # open link in current tab
+-
+  type: portfolio
+  icon: 'fa-solid fa-portrait'
+  url:  'https://atom-basin-5f5.notion.site/f5b449b3a63f4097b460b1bbb7ced50c?pvs=4'
 # -
 #   type: rss
 #   icon: 'fas fa-rss'
