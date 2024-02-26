@@ -1,7 +1,7 @@
 ---
 title: '[Python] 좌표를 행정동 주소로 바꾸기'
-categories: [web]
-tags: [web, backend, data, python]
+categories: [개발, python]
+tags: [web, backend, data, python, reverse-geocoding, geocoding]
 ---
 
 # 개요
