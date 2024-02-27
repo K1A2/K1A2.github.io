@@ -6,7 +6,7 @@ tags: [web, front, react]
 
 # React의 구조
 
-![winner](/assets/img/2023-03-05-react-structure/structure.png){: width="400px"}
+![winner](/assets/img/2023-03-05-react-structure/structure.webp){: width="200px"}
 
 * **node_modules**  
     npm 패키지들이 설치되는 공간
@@ -32,7 +32,7 @@ tags: [web, front, react]
 
 * **favicon.ico**  
     웹페이지의 아이콘. 브라우저 상단 탭에 나오는 아이콘이다.  
-    ![winner](/assets/img/2023-03-05-react-structure/fav_ex.png){: width="400px"}
+    ![winner](/assets/img/2023-03-05-react-structure/fav_ex.webp){: width="400px"}
 * **index.html**  
     가상 DOM을 위한 HTML 파일.  
     index.js가 렌더링한 결과가 index.html에 root div에 표시됨.
