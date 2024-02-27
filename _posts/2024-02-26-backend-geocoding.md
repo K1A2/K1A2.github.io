@@ -67,7 +67,7 @@ plt.show()
 총 3518개의 지역 정보가 있고, 행정동 코드, 행정동 이름, 폴리곤 정보로 구성되있음을 알 수 있습니다. 
 폴리곤 정보는 지역의 경계를 다각형으로 표현한겁니다. 출력된 그래프를 보시면 한번에 이해하실 수 있을겁니다.
 
-![winner](/assets/images/2024-02-26-backend-geocoding/myplot.png){: width="700px"}
+![winner](/assets/img/2024-02-26-backend-geocoding/myplot.png){: width="700px"}
 _각 지역의 경계가 표현됨_
 
 이번엔 센서스 공간정보 지역 코드.xlsx 파일을 확인해봅시다.  
@@ -164,7 +164,7 @@ shp 파일에서 행정동 코드를 가져와 시도/시군구/읍면동 코드
 이제 만들어진 shp 파일로 역지오코딩 테스트를 해봅시다. 
 좌표가 주어졌을때 해당 좌표의 행정동 위치는 어디인지 알려면 주어진 좌표가 어느 행정동 폴리곤 안에 위치하는지 찾으면 됩니다.
 
-![winner](/assets/images/2024-02-26-backend-geocoding/polygon.png){: width="200px"}
+![winner](/assets/img/2024-02-26-backend-geocoding/polygon.png){: width="200px"}
 _예시_
 
 예시에서 빨간 점이 주어진 좌표라면, 폴리곤 안에 좌표가 포함되어 있다면 그 폴리곤의 행정동 이름을 리턴하면 되는겁니다. 
