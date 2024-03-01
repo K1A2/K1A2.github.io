@@ -162,6 +162,12 @@ MAX_ZOOM=14
 ...
 ```
 
+아래 이미지들은 MAX_ZOOM=18로 지정하고 실행한 결과입니다. 
+도로, 건물 등 세세한 정보들이 표기됩니다.
+
+![tile](/assets/img/2024-02-29-backend-map/level_18_tile1.webp){: width="300px"}  
+![tile](/assets/img/2024-02-29-backend-map/level_18_tile2.webp){: width="300px"}
+
 권장은 최대 14이며, 그보다 큰 줌 레벨은 일반적으로 필요 없다고 설명하고 있습니다. 
 실제로 이슈를 보다보면 줌레벨 22로 지정했다가 5000일 걸린다는 메세지를 봤다고 올라와 있습니다.
 
