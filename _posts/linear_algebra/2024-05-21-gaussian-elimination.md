@@ -235,5 +235,3 @@ homoneneous equation이 nontrivial solution을 가지는 경우는 두 가지가
 2. 방정식보다 미지수 개수가 많을 경우  
 방정식보다 미지수가 많으면 Row Echelon Form으로 표현해도 leading 1이 나타나지 않는 미지수가 있다. 
 이는 **free value**(자유 변수)로 표현된다.
-
-
