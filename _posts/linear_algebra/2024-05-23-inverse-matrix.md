@@ -28,7 +28,22 @@ $$
 main diagonal(주대각성분) 원소들이 모두 1이고 나머지 원소가 모두 0이면 **unit matirx**(단위 행렬) 또는 **identity matrix**(항등 행렬)라고 한다. 
 표기는 $$\mathit{I}$$, 크기와 함께 표기할 땐 $$\mathit{I}_n$$으로 표기한다.
 
-![d](https://latex.codecogs.com/svg.image?A\mathit{I}_2=\begin{equation}\begin{bmatrix}1&0\\0&1\\\end{bmatrix}\end{equation}\begin{equation}\begin{bmatrix}a_{11}&a_{12}&a_{13}\\a_{21}&a_{21}&a_{23}\\\end{bmatrix}\end{equation}=\begin{equation}\begin{bmatrix}a_{11}&a_{12}&a_{13}\\a_{21}&a_{21}&a_{23}\\\end{bmatrix}\end{equation}=A)
+$$\mathit{I}_2A =
+\begin{equation}
+   \begin{bmatrix}
+      1 & 0\\
+      0 & 1\\
+   \end{bmatrix}
+
+   \begin{bmatrix}
+      a_{11}&a_{12}&a_{13}\\
+      a_{21}&a_{21}&a_{23}\\
+   \end{bmatrix} =
+   \begin{bmatrix}
+      a_{11}&a_{12}&a_{13}\\
+      a_{21}&a_{21}&a_{23}\\
+   \end{bmatrix}
+\end{equation} = A$$
 
 identity matrix는 다른 행렬을 곱하면 그 행렬이 결과값으로 나온다. 실수 연산의 1과 같은 역할.
 
@@ -42,7 +57,17 @@ A에 대한 B가 존재하지 않는다면 A는 **singular matirx**(특이 행�
 
 ## 성질 1
 
-![d](https://latex.codecogs.com/svg.image?A=\begin{bmatrix}a&b\\c&d\end{bmatrix}\\A^{-1}=\frac{1}{ad-bc}\begin{bmatrix}d&-b\\-c&a\end{bmatrix})
+$$A =
+\begin{bmatrix}
+   a&b\\
+   c&d
+\end{bmatrix}\\
+
+A^{-1} = \frac{1}{ad-bc}
+\begin{bmatrix}
+   d&-b\\
+   -c&a
+\end{bmatrix}$$
 
 위 예제에서 행렬 A가 invertable인지 확인하는 방법은 $$ad - bc \neq 0$$ 이다.
 
