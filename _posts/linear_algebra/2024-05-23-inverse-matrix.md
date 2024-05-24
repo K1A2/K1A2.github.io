@@ -1,5 +1,5 @@
 ---
-title: '[선형대수] 역행렬과 형렬 성질'
+title: '[선형대수] 역행렬과 행렬 성질'
 categories: [수학, 선형대수]
 tags: [math, linear-algebra, inverse-matrix]
 ---
