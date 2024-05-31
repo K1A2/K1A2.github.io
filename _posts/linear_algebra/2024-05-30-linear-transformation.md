@@ -1,7 +1,7 @@
 ---
-title: '[선형대수] 선형변환'
+title: '[선형대수] 행렬변환'
 categories: [수학, 선형대수]
-tags: [math, linear-algebra, linear-transformation]
+tags: [math, linear-algebra, linear-transformation, matrix-transformatioin]
 ---
 
 # Matrix Transformation
@@ -105,3 +105,18 @@ x_{1} - 3x_{2} \\
 -x_{1} + x_{2}
 \end{bmatrix}
 $$
+
+
+# 행렬변환 합성
+
+행렬변환 후 다른 행렬변환하는 과정을 뜻한다. 함수의 합성을 생각하면 이해가 쉽다. 
+$$T_{A}: R^{n} \rightarrow R^{k}$$ 이고, $$T_{B}: R^{k} \rightarrow R^{m}$$ 일때, 두 행렬변환의 합성은 $$T_{B}(T_{A}(x))$$ 또는 $$T_{B} \circ T_{A} = T_{BA}$$ 라고 표현하고, $$T_{A}$$와 $$T_{B}$$의 합성이라고 한다.
+
+## 행렬변환의 교환
+
+일반적으로 행렬변환은 교환이 성립되지 않는다. 하지만 예외적으로 회전의 합성은 교환이 가능하다.
+
+
+# 행렬변환의 역
+
+$$T_{A}: R^{n} \rightarrow R^{k}$$의 표준행렬 $$$A$$가 가역이라면 $$T_{A}$$도 가역이고, $$T_{A}$$의 역이 존재한다. 이때  $$T_{A}^{-1}=T_{A^{-1}}$$가 성립한다. 그러므로  $$T_{A}^{-1} \circ T_{A} = T_{A^{-1}} \circ T_{A} = T_{A^{-1}A} = T_{I}$$가 성립한다.
